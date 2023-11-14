@@ -7,6 +7,7 @@ import "./globals.css";
 import NavBar from "./NavBar";
 import AuthProvider from "./auth/Provider";
 import QueryClientProvider from "./QueryClientProvider";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
               </main>
               {/* <ThemePanel /> */}
             </Theme>
+            <Toaster />
           </AuthProvider>
         </QueryClientProvider>
       </body>
