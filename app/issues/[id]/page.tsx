@@ -13,7 +13,7 @@ interface Props {
   params: { id: string };
 }
 
-const fetchUser = cache((issueId: number) =>
+export const fetchUser = cache((issueId: number) =>
   prisma.issue.findUnique({ where: { id: issueId } })
 );
 
